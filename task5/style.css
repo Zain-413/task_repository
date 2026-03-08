@@ -1,0 +1,127 @@
+/* Reset and Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Header & Throttling Banner */
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 1rem;
+}
+
+#resize-banner {
+    background-color: #e3f2fd;
+    color: #1565c0;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+/* Form Styles */
+.form-section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #fafafa;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.input-group {
+    margin-bottom: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+input {
+    padding: 0.8rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2196f3;
+}
+
+/* Validation Classes (JS will trigger these) */
+input.is-valid { border-color: #4caf50; }
+input.is-invalid { border-color: #f44336; }
+
+.error-message {
+    color: #f44336;
+    font-size: 0.85rem;
+    margin-top: 0.3rem;
+    min-height: 1.2em; /* Keeps the layout from jumping */
+}
+
+button {
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+button:hover { background-color: #1976d2; }
+
+/* Task List Styles */
+#task-list { list-style: none; }
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 1rem;
+    border: 1px solid #eee;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.task-info strong { display: block; font-size: 1.1rem; }
+.task-info span { color: #666; font-size: 0.9rem; }
+
+.delete-btn {
+    background-color: #ffebee;
+    color: #f44336;
+    border: 1px solid #ffcdd2;
+    padding: 0.5rem 1rem;
+    width: auto;
+}
+
+.delete-btn:hover { background-color: #f44336; color: white; }
